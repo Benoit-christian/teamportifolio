@@ -175,13 +175,16 @@ div.members-socials h3 {
     gap: 15px;
     margin-top: 10px;
 }
+.social-links a {
+    transition: transform 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.1);
+}
 
 .social-links a img{
     width: 48px;
     height: 48px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
 }
 div.members-socials a:hover {
     text-decoration: underline;
