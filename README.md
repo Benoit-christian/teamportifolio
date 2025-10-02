@@ -24,15 +24,15 @@ After completing individual portfolios, we collaborated on the team portfolio to
 - Developed personal portfolio with focus on [specific skills/technologies]
 - Designed and implemented [key features of personal portfolio]
 
+***Screenshots:***
+![Member 1 Portfolio Homepage](./assets/screenshots/mucyo-portifolio.png)
+*Personal portfolio homepage*
+
 **Team Portfolio Contribution:**
 - **Navbar:** Created responsive navigation menu
 - **Hero Section:** Designed and developed the landing hero section
 
-**Screenshots:**
-
-![Member 1 Portfolio Homepage](./assets/screenshots/mucyo-portifolio.png)
-*Personal portfolio homepage*
-
+***Screenshots:***
 ![Team Portfolio Navbar](./assets/screenshots/navbar-heroSection.png)
 *Responsive navigation bar and hero section (Mucyo's work in Team Portifolio)*
 
@@ -44,14 +44,14 @@ After completing individual portfolios, we collaborated on the team portfolio to
 - Created portfolio highlighting [specific skills/technologies]
 - Built [key features of personal portfolio]
 
-**Team Portfolio Contribution:**
-- **Team Profiles Section:** Developed the team member profiles with images, descriptions, and view profiles link
-
-**Screenshots:**
-
+***Screenshots:***
 ![Member 2 Portfolio Homepage](./assets/screenshots/mpano-portifolio.png)
 *Personal portfolio homepage*
 
+**Team Portfolio Contribution:**
+- **Team Profiles Section:** Developed the team member profiles with images, descriptions, and view profiles link
+
+***Screenshots:***
 ![Team Profiles Section](./assets/screenshots/teamProfilesSection.png)
 *Team member profiles section (Mpano's work in team portifolio)*
 
@@ -80,33 +80,6 @@ After completing individual portfolios, we collaborated on the team portfolio to
 
 ---
 
-## 🌟 Team Portfolio
-
-Our collaborative team portfolio brings together our individual strengths to showcase our ability to work as a cohesive unit.
-
-**Division of Work:**
-- **Member 1:** Navbar and Hero Section
-- **Member 2:** Team Profiles Section
-- **Member 3:** Footer
-
-**Key Features:**
-- Responsive navigation bar
-- Eye-catching hero section
-- Interactive team member profiles
-- Professional footer with contact information
-- Clean, unified design system
-
-**Screenshots:**
-
-![Team Portfolio Homepage](path/to/team-home.png)
-*Team portfolio landing page*
-
-![Team Projects Section](path/to/team-projects.png)
-*Collaborative projects showcase*
-
-![Team About Section](path/to/team-about.png)
-*Meet the team section*
-
 ## 🛠️ Technologies Used
 
 ### Individual Portfolios
@@ -124,91 +97,31 @@ Our collaborative team portfolio brings together our individual strengths to sho
 
 ```
 project-root/
-├── member1-portfolio/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── member2-portfolio/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── member3-portfolio/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── team-portfolio/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── assets/
+│   ├── audios/
+│   ├── icons/
+│   ├── img/
+│   └── screenshots/
+|
+├── pages/
+│   ├── mpano.html
+│   ├── mucyo.html
+│   └── benoit.html
+│   
+├── script/
+│   └── index.js
+|
+├── styles/
+│   ├── index.css
+│   ├── mpano.css
+│   ├── mucyo.css
+│   └── benoit.css
 └── README.md
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [List any prerequisites needed]
-- [e.g., Node.js, npm, etc.]
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone [repository-url]
-```
-
-2. Navigate to the project directory
-```bash
-cd project-directory
-```
-
-3. [Additional setup steps if needed]
-
 ## 📱 Live Demos
 
-- **Member 1 Portfolio:** [Live Link](url)
-- **Member 2 Portfolio:** [Live Link](url)
-- **Member 3 Portfolio:** [Live Link](url)
-- **Team Portfolio:** [Live Link](url)
-
-## 🤝 Collaboration Tools & Methods
-
-- **Version Control:** Git & GitHub
-- **Communication:** [e.g., Slack, Discord, WhatsApp]
-- **Project Management:** [e.g., Trello, Jira, GitHub Projects]
-- **Design:** [e.g., Figma, Adobe XD]
-- **Meetings:** [Regular sync-ups, code reviews]
-
-## 📈 Project Timeline
-
-- **Week 1-2:** Individual portfolio development
-- **Week 3:** Individual portfolio completion and review
-- **Week 4-5:** Team portfolio planning and development
-- **Week 6:** Final integration and deployment
-
-## 🎯 Learning Outcomes
-
-Through this collaborative project, we gained experience in:
-- Individual portfolio development and personal branding
-- Team collaboration and version control
-- Code reviews and peer feedback
-- Project planning and time management
-- Integrated deployment strategies
-
-## 📄 License
-
-[Specify license if applicable]
-
-## 📧 Contact
-
-For any questions or collaboration opportunities, feel free to reach out:
-- Member 1: [email]
-- Member 2: [email]
-- Member 3: [email]
-
----
-
-**Last Updated:** [Date]
+- **Elise Mucyo Portfolio:** [Live Link](https://mucyoelise.github.io/teamportifolio/pages/mucyo.html)
+- **Mpano Aphrodis Portfolio:** [Live Link](https://mucyoelise.github.io/teamportifolio/pages/mpano.html)
+- **Benoit Portfolio:** [Live Link](https://mucyoelise.github.io/teamportifolio/pages/benoit.html)
+- **Team Portfolio:** [Live Link](https://mucyoelise.github.io/teamportifolio/)
