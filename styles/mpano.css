@@ -1,0 +1,596 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.nav-links {
+    display: flex;
+    font-size: 30px;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links > li > a:hover {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #28A745;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+section.hero { 
+    margin: 30px 1.5em;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-info > h1 {
+    font-size: 60px;
+}
+
+.hero-info > p {
+    font-size: large;
+    line-height: 2em;
+}
+
+.hero-info > a {
+    background-color: #28A745;
+    text-decoration: none;
+    border: 2px solid gainsboro;
+    border-radius: 45px;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.hero-img > img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Skills Section Styles */
+.skills > h1 {
+    padding: 1.5em;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.skills-holder {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2em;
+    box-shadow: 2px 2px 30px gray;
+}
+
+.skill-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.skill-card-items > li {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/* Hobbies Section Styles */
+section.hobbies {
+    margin: 30px 1.5em;
+}
+
+.hobbies > h1 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    padding: 1.5em;
+}
+
+.hobbies-holder {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2em;
+    box-shadow: 2px 2px 30px gray;
+    width: 300px;
+    text-align: center;
+}
+
+.hobby-card > img {
+    width: 100px;
+    align-self: center;
+}
+
+.hobby-card > p {
+    font-size: large;
+    line-height: 2em;
+}
+
+/* Media Section Styles */
+section.media {
+    margin: 30px 1.5em;
+    text-align: center;
+}
+
+.media > h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    padding: 1.5em;
+}
+
+.media-holder {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 2rem;
+    padding: 2em;
+    align-items: center; /* Center cards */
+}
+
+.media-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2em;
+    box-shadow: 2px 2px 30px gray;
+    width: 100%;
+    max-width: 1200px; /* Wide for larger screens */
+    text-align: center;
+    align-items: center;
+}
+
+.media-card > h2 {
+    font-size: 24px;
+}
+
+.media-content {
+    display: flex;
+    flex-direction: row; /* Side-by-side for larger screens */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between media items */
+    width: 100%;
+    justify-content: center;
+}
+
+.media-item {
+    display: flex;
+    flex-direction: column; /* Stack media and description */
+    gap: 8px;
+    width: calc(50% - 10px); /* Two items per row */
+    min-width: 280px; /* Minimum width for larger screens */
+}
+
+.media-item > audio {
+    width: 100%;
+}
+
+.media-item > iframe {
+    width: 100%;
+    height: 315px; /* Default height */
+    border: none;
+}
+
+.media-item > p {
+    font-size: large;
+    line-height: 1.8em;
+    margin: 0;
+}
+
+/* Contact Section Styles */
+section.contacts {
+    margin: 2em 1.5em;
+    text-align: center;
+}
+
+.contacts > h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.contacts > p {
+    font-size: large;
+    line-height: 2em;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.contact-buttons {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-btn:hover {
+    background: #808080;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(146, 127, 255);
+    color: white;
+    margin-top: 30px;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .hero-img {
+        display: none;
+    }
+
+    .hero-info { 
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+
+    .nav-links.active > li {
+        padding-top: 15px;
+    }
+
+    .nav-links > li > a {
+        font-size: 18px;
+        padding: 8px;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        margin: 0 10px;
+    }
+
+    section.hero {
+        margin: 20px 0.5em;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-info > h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .hero-info > p {
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+
+    .hero-info > a {
+        font-size: 16px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .skills > h1 {
+        font-size: 36px;
+        padding: 1em;
+    }
+
+    .skill-card {
+        padding: 1.5em;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .skill-card-items {
+        padding-left: 25px;
+        gap: 8px;
+    }
+
+    .skill-card-items > li {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    .hobbies > h1 {
+        font-size: 36px;
+        padding: 1em;
+    }
+
+    .hobby-card {
+        width: 100%;
+        max-width: 280px;
+        padding: 1.5em;
+    }
+
+    .hobby-card > p {
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+
+    section.media {
+        margin: 20px 0.5em;
+    }
+
+    .media > h1 {
+        font-size: 36px;
+        padding: 1em;
+    }
+
+    .media-holder {
+        padding: 1em;
+    }
+
+    .media-card {
+        width: 100%;
+        max-width: 95%; /* Nearly full width */
+        padding: 0; /* No internal padding */
+    }
+
+    .media-card > h2 {
+        font-size: 20px;
+        padding: 1em; /* Padding for h2 */
+    }
+
+    .media-content {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0; /* No gap between items */
+    }
+
+    .media-item {
+        width: 100%; /* Full width of card */
+        min-width: 0; /* No minimum width needed */
+        padding: 0.5em; /* Minimal padding for content */
+    }
+
+    .media-item > audio {
+        max-width: 100%;
+    }
+
+    .media-item > iframe {
+        max-width: 100%;
+        height: 180px; /* Adjusted for ~320px width */
+    }
+
+    .media-item > p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+
+    .contacts > h1 {
+        font-size: 36px;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    .contacts > p {
+        font-size: 14px;
+        line-height: 1.8em;
+        white-space: normal;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 1.5em auto;
+    }
+
+    .contact-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-info > h1 {
+        font-size: 28px;
+    }
+
+    .hero-info > p {
+        font-size: 14px;
+    }
+
+    .hero-info > a {
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .skills > h1 {
+        font-size: 28px;
+    }
+
+    .skill-card {
+        padding: 1em;
+        max-width: 100%;
+    }
+
+    .skill-card-items > li {
+        font-size: 12px;
+    }
+
+    .hobbies > h1 {
+        font-size: 28px;
+    }
+
+    .hobby-card {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .hobby-card > p {
+        font-size: 12px;
+    }
+
+    .media > h1 {
+        font-size: 28px;
+    }
+
+    .media-card {
+        max-width: 95%;
+        padding: 0; /* No internal padding */
+    }
+
+    .media-card > h2 {
+        font-size: 18px;
+        padding: 0.75em;
+    }
+
+    .media-content {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0; /* No gap */
+    }
+
+    .media-item {
+        width: 100%; /* Full width of card */
+        min-width: 0; /* No minimum width */
+        padding: 0.25em; /* Minimal padding */
+    }
+
+    .media-item > audio {
+        max-width: 100%;
+    }
+
+    .media-item > iframe {
+        max-width: 100%;
+        height: calc(100% * 315 / 560); /* Dynamic aspect ratio */
+    }
+
+    .media-item > p {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
+    .contacts > h1 {
+        font-size: 28px;
+    }
+
+    .contacts > p {
+        font-size: 12px;
+    }
+
+    .contact-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
