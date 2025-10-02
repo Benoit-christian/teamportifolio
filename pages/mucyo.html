@@ -8,18 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../styles/pages.css">
+    <link rel="stylesheet" href="../styles/mucyo.css">
     <title>Elise Mucyo</title>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <header class="logo"><img src="../assets/img/logo.png" width="100px" alt="Logo Icon"></header>
+        <a href="../index.html" class="logo"><img src="../assets/icons/home.svg" width="80px" alt="Logo Icon">Back to Home</a>
         <div class="menu-toggle" id="menu-toggle"> ☰ </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#media">Favorites</a></li>
         </ul>
     </nav>
 
@@ -41,59 +41,184 @@
         </section>
         <!-- Skills Section -->
         <section class="skills" id="skills">
-            <h1>Skills</h1>
-            <div class="skills-holder">
-                <div class="skill-card">
-                    <h2>UI & UX</h2>
-                    <div class="skill-card-items">
-                        <p>Figma</p>
-                        <p>Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h2>Frontend Development</h2>
-                    <div class="skill-card-items">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>React</p>
-                        <p>TypeScript</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h2>Backend Development</h2>
-                    <div class="skill-card-items">
-                        <p>Python</p>
-                        <p>Django</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h2>Database Engineering</h2>
-                    <div class="skill-card-items">
-                        <p>SQL</p>
-                        <p>MySQL</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h2>Dev Tools | Frameworks</h2>
-                    <div class="skill-card-items">
-                        <p>Git</p>
-                        <p>Linux/Unix</p>
-                        <p>Bash</p>
-                        <p>Bootstrap</p>
-                        <p>TailwindCss</p>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h2>Other Skills</h2>
-                    <div class="skill-card-items">
-                        <p>Ms Word</p>
-                        <p>Ms Excel</p>
-                        <p>Ms PowerPoint</p>
-                        <p>Ms Access</p>
-                    </div>
-                </div>
-            </div>
+        <h1>Skills</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category" rowspan="2">UI & UX</td>
+                    <td>Figma</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adobe Photoshop</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Intermediate</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" rowspan="5">Frontend Development</td>
+                    <td>HTML</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Expert</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Expert</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TypeScript</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Intermediate</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" rowspan="2">Backend Development</td>
+                    <td>Python</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Django</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" rowspan="2">Database Engineering</td>
+                    <td>SQL</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" rowspan="5">Dev Tools | Frameworks</td>
+                    <td>Git</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Linux/Unix</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Intermediate</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Intermediate</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TailwindCSS</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="category" rowspan="4">Other Skills</td>
+                    <td>MS Word</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Expert</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MS Excel</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Advanced</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MS PowerPoint</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Expert</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MS Access</td>
+                    <td>
+                        <div class="proficiency">
+                            <p class="proficiency-text">Intermediate</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         </section>
         <!-- Hobbies Section -->
         <section class="hobbies" id="hobbies">
@@ -134,12 +259,12 @@
                 <div class="media-card">
                     <h2>Music Videos</h2>
                     <div class="media-items">
-                        <div class="media-item  ">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FuM8lP2SXN8?si=EHru4RQAFu-K7CYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="media-item">
+                            <iframe src="https://www.youtube.com/embed/FuM8lP2SXN8?si=EHru4RQAFu-K7CYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <p>JUGUMiLA - Dj Phil Peter feat Chriss Eazy & Kevin Kade</p>
                         </div>
                         <div class="media-item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Lfs-1cMbgc?si=XuS5w_WpNEX-9KB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/5Lfs-1cMbgc?si=XuS5w_WpNEX-9KB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <p>Rlutta - Umeze Bon</p>
                         </div>
                     </div>

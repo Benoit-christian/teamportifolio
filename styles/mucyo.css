@@ -15,6 +15,23 @@ nav{
     box-shadow: 4px 4px 10px gray;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0 12px;
+    width: fit-content;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.logo:hover {
+    color: darkblue;
+    background-color: lightgray;
+}
+
 .nav-links {
     display: flex;
     font-size: 30px;
@@ -87,43 +104,85 @@ section.hero {
 
 
 /* Skills Section Styles */
-
-.skills > h1 {
-  padding: 1.5em;
-  text-align: center;
-  font-size: 50px;
-  text-decoration: underline;
+.skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 
-.skills-holder {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2em;
+.skills h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
 }
 
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 2em;
-  box-shadow: 2px 2px 30px gray;
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.skill-card-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
 }
 
-.skill-card-items > p {
-  background-color: rgb(146, 127, 255);
-  padding: 6px;
-  border-radius: 45px;
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1em;
 }
 
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.category {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 1.05em;
+}
+
+.proficiency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.proficiency-text {
+    min-width: 80px;
+    font-weight: 500;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
 /* Hobbies Section Styles */
 
 section.hobbies {
@@ -200,6 +259,17 @@ section.media {
   flex-wrap: wrap;
   gap: 4em;
   justify-content: center;
+}
+
+.media-item iframe{
+  width: 560px;
+  height: 315px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.media-item iframe:hover {
+  transform: scale(1.05);
 }
 
 .media-item > audio {
@@ -363,4 +433,15 @@ footer {
     flex-direction: column;
     width: 50%;
   }
+  .media-items {
+    flex-direction: column;
+    gap: 4em;
+    justify-content: center;
+  }
+  .media-item iframe{
+    width: 90%;
+    height: 315px;
+  }
+
+
 }
