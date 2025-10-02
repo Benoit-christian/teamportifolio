@@ -4,8 +4,8 @@
 This repository contains our collaborative group work, where each team member developed their individual portfolio and contributed to the team portfolio.
 
 ## 👥 Team Members
-- **Elise Mucyo** - [GitHub Profile](link) | [Portfolio](https://mucyoelise.github.io/teamportifolio/pages/mucyo.html)
-- **Mpano Aphrodis** - [GitHub Profile](link) | [Portfolio](https://mucyoelise.github.io/teamportifolio/pages/aphrodis.html)
+- **Elise Mucyo** - [GitHub Profile](https://github.com/mucyoelise) | [Portfolio](https://mucyoelise.github.io/teamportifolio/pages/mucyo.html)
+- **Mpano Aphrodis** - [GitHub Profile](https://github.com/Ballet-ux) | [Portfolio](https://mucyoelise.github.io/teamportifolio/pages/mpano.html)
 - **Benoit** - [GitHub Profile](link) | [Portfolio](https://mucyoelise.github.io/teamportifolio/pages/benoit.html)
 
 ## 🤝 Collaboration Workflow
@@ -33,31 +33,27 @@ After completing individual portfolios, we collaborated on the team portfolio to
 ![Member 1 Portfolio Homepage](./assets/screenshots/mucyo-portifolio.png)
 *Personal portfolio homepage*
 
-![Team Portfolio Navbar](path/to/team-navbar.png)
-*Responsive navigation bar and hero section (My work in Team Portifolio)*
+![Team Portfolio Navbar](./assets/screenshots/navbar-heroSection.png)
+*Responsive navigation bar and hero section (Mucyo's work in Team Portifolio)*
 
 ---
 
-### Member 2 Name
-**Role:** [e.g., Backend Developer]
+### Mpano Aphrodis
 
 **Individual Portfolio Responsibilities:**
 - Created portfolio highlighting [specific skills/technologies]
 - Built [key features of personal portfolio]
 
 **Team Portfolio Contribution:**
-- **Team Profiles Section:** Developed the team member profiles with images, descriptions, and social links
+- **Team Profiles Section:** Developed the team member profiles with images, descriptions, and view profiles link
 
 **Screenshots:**
 
-![Member 2 Portfolio Homepage](path/to/member2-home.png)
+![Member 2 Portfolio Homepage](./assets/screenshots/mpano-portifolio.png)
 *Personal portfolio homepage*
 
-![Member 2 Skills Section](path/to/member2-skills.png)
-*Skills and expertise section*
-
-![Team Profiles Section](path/to/team-profiles.png)
-*Team member profiles section (Member 2's work)*
+![Team Profiles Section](./assets/screenshots/teamProfilesSection.png)
+*Team member profiles section (Mpano's work in team portifolio)*
 
 ---
 
