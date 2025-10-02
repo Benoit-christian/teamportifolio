@@ -13,14 +13,18 @@
 </head>
 <body>
     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
-        <header class="logo"><img src="../assets/img/logo1.png" width="100px" alt="Logo Icon"></header>
+        <header class="logo">
+            <a href="/" aria-label="Home">
+                <img src="../assets/icons/home.svg" width="100px" alt="Logo Icon">
+            </a>
+        </header>
         <div class="menu-toggle" id="menu-toggle"> ☰ </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#media">Favorites</a></li>
         </ul>
     </nav>
 
@@ -41,48 +45,37 @@
         <!-- Skills Section -->
         <section class="skills" id="skills">
             <h1>Skills</h1>
-            <div class="skills-holder">
-                
-                <div class="skill-card">
-                    <h2>Frontend Development</h2>
-                    <ul class="skill-card-items">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h2>Backend Development</h2>
-                    <ul class="skill-card-items">
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Flask</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h2>Database Engineering</h2>
-                    <ul class="skill-card-items">
-                        <li>SQLite</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h2>Dev Tools | Frameworks</h2>
-                    <ul class="skill-card-items">
-                        <li>Git</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h2>Other Skills</h2>
-                    <ul class="skill-card-items">
-                        <li>Ms Word</li>
-                        <li>Ms Excel</li>
-                        <li>Ms PowerPoint</li>
-                        <li>Ms Access</li>
-                    </ul>
-                </div>
+            <div class="skills-table-container">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frontend Development</td>
+                            <td>HTML, CSS, JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Backend Development</td>
+                            <td>Python, Django, Flask</td>
+                        </tr>
+                        <tr>
+                            <td>Database Engineering</td>
+                            <td>SQLite, MySQL</td>
+                        </tr>
+                        <tr>
+                            <td>Dev Tools | Frameworks</td>
+                            <td>Git, Bootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>Other Skills</td>
+                            <td>Ms Word, Ms Excel, Ms PowerPoint, Ms Access</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         <!-- Hobbies Section -->
@@ -155,7 +148,6 @@
                 <a href="https://github.com/ballet-ux" class="contact-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
                     <img src="../assets/icons/github-icon.svg" alt="GitHub icon"> GitHub Profile
                 </a>
-                
             </div>
         </section>
     </main>

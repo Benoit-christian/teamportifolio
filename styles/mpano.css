@@ -95,34 +95,44 @@ section.hero {
     text-decoration: underline;
 }
 
-.skills-holder {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+.skills-table-container {
     padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.skill-card {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 2em;
-    box-shadow: 2px 2px 30px gray;
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 }
 
-.skill-card-items {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: disc;
-    padding-left: 20px;
-    margin: 0;
+.skills-table th,
+.skills-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.skill-card-items > li {
+.skills-table th {
+    background-color: #28A745;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.skills-table td {
     font-size: 16px;
     line-height: 1.5em;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.skills-table tr:hover {
+    background-color: #f1f1f1;
 }
 
 /* Hobbies Section Styles */
@@ -179,10 +189,10 @@ section.media {
 
 .media-holder {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
+    flex-direction: column;
     gap: 2rem;
     padding: 2em;
-    align-items: center; /* Center cards */
+    align-items: center;
 }
 
 .media-card {
@@ -192,7 +202,7 @@ section.media {
     padding: 2em;
     box-shadow: 2px 2px 30px gray;
     width: 100%;
-    max-width: 1200px; /* Wide for larger screens */
+    max-width: 1200px;
     text-align: center;
     align-items: center;
 }
@@ -203,19 +213,19 @@ section.media {
 
 .media-content {
     display: flex;
-    flex-direction: row; /* Side-by-side for larger screens */
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px; /* Space between media items */
+    gap: 20px;
     width: 100%;
     justify-content: center;
 }
 
 .media-item {
     display: flex;
-    flex-direction: column; /* Stack media and description */
+    flex-direction: column;
     gap: 8px;
-    width: calc(50% - 10px); /* Two items per row */
-    min-width: 280px; /* Minimum width for larger screens */
+    width: calc(50% - 10px);
+    min-width: 280px;
 }
 
 .media-item > audio {
@@ -224,7 +234,7 @@ section.media {
 
 .media-item > iframe {
     width: 100%;
-    height: 315px; /* Default height */
+    height: 315px;
     border: none;
 }
 
@@ -396,20 +406,14 @@ footer {
         padding: 1em;
     }
 
-    .skill-card {
-        padding: 1.5em;
-        width: 100%;
-        max-width: 300px;
+    .skills-table-container {
+        padding: 1em;
     }
 
-    .skill-card-items {
-        padding-left: 25px;
-        gap: 8px;
-    }
-
-    .skill-card-items > li {
+    .skills-table th,
+    .skills-table td {
+        padding: 10px;
         font-size: 14px;
-        line-height: 1.4em;
     }
 
     .hobbies > h1 {
@@ -443,24 +447,24 @@ footer {
 
     .media-card {
         width: 100%;
-        max-width: 95%; /* Nearly full width */
-        padding: 0; /* No internal padding */
+        max-width: 95%;
+        padding: 0;
     }
 
     .media-card > h2 {
         font-size: 20px;
-        padding: 1em; /* Padding for h2 */
+        padding: 1em;
     }
 
     .media-content {
-        flex-direction: column; /* Stack items vertically */
-        gap: 0; /* No gap between items */
+        flex-direction: column;
+        gap: 0;
     }
 
     .media-item {
-        width: 100%; /* Full width of card */
-        min-width: 0; /* No minimum width needed */
-        padding: 0.5em; /* Minimal padding for content */
+        width: 100%;
+        min-width: 0;
+        padding: 0.5em;
     }
 
     .media-item > audio {
@@ -469,7 +473,7 @@ footer {
 
     .media-item > iframe {
         max-width: 100%;
-        height: 180px; /* Adjusted for ~320px width */
+        height: 180px;
     }
 
     .media-item > p {
@@ -520,13 +524,41 @@ footer {
         font-size: 28px;
     }
 
-    .skill-card {
-        padding: 1em;
-        max-width: 100%;
+    .skills-table-container {
+        padding: 0.5em;
     }
 
-    .skill-card-items > li {
-        font-size: 12px;
+    .skills-table {
+        display: block;
+    }
+
+    .skills-table thead {
+        display: none;
+    }
+
+    .skills-table tr {
+        display: block;
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .skills-table td {
+        display: block;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .skills-table td:first-child {
+        font-weight: bold;
+        font-size: 14px;
+        color: #28A745;
+        margin-bottom: 5px;
+    }
+
+    .skills-table td:last-child {
+        border-bottom: none;
     }
 
     .hobbies > h1 {
@@ -548,7 +580,7 @@ footer {
 
     .media-card {
         max-width: 95%;
-        padding: 0; /* No internal padding */
+        padding: 0;
     }
 
     .media-card > h2 {
@@ -557,14 +589,14 @@ footer {
     }
 
     .media-content {
-        flex-direction: column; /* Stack items vertically */
-        gap: 0; /* No gap */
+        flex-direction: column;
+        gap: 0;
     }
 
     .media-item {
-        width: 100%; /* Full width of card */
-        min-width: 0; /* No minimum width */
-        padding: 0.25em; /* Minimal padding */
+        width: 100%;
+        min-width: 0;
+        padding: 0.25em;
     }
 
     .media-item > audio {
@@ -573,7 +605,7 @@ footer {
 
     .media-item > iframe {
         max-width: 100%;
-        height: calc(100% * 315 / 560); /* Dynamic aspect ratio */
+        height: calc(100% * 315 / 560);
     }
 
     .media-item > p {
