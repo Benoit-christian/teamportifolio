@@ -25,7 +25,7 @@ After completing individual portfolios, we collaborated on the team portfolio to
 - Designed and implemented [key features of personal portfolio]
 
 ***Screenshots:***
-![Member 1 Portfolio Homepage](./assets/screenshots/mucyo-portifolio.png)
+![Mucyo's Portfolio Homepage](./assets/screenshots/mucyo-portifolio.png)
 *Personal portfolio homepage*
 
 **Team Portfolio Contribution:**
@@ -45,7 +45,7 @@ After completing individual portfolios, we collaborated on the team portfolio to
 - Built [key features of personal portfolio]
 
 ***Screenshots:***
-![Member 2 Portfolio Homepage](./assets/screenshots/mpano-portifolio.png)
+![Mpano's Portfolio Homepage](./assets/screenshots/mpano-portifolio.png)
 *Personal portfolio homepage*
 
 **Team Portfolio Contribution:**
@@ -57,26 +57,22 @@ After completing individual portfolios, we collaborated on the team portfolio to
 
 ---
 
-### Member 3 Name
-**Role:** [e.g., UI/UX Designer]
+### Benoit Mugenga
 
 **Individual Portfolio Responsibilities:**
 - Built portfolio showcasing [specific skills/technologies]
 - Implemented [key features of personal portfolio]
 
-**Team Portfolio Contribution:**
-- **Footer:** Designed and developed the footer section with contact information, social media links, and copyright
-
-**Screenshots:**
-
-![Member 3 Portfolio Homepage](path/to/member3-home.png)
+***Screenshots:***
+![Benoit's Portfolio Homepage](./assets/screenshots/benoit-portifolio.png)
 *Personal portfolio homepage*
 
-![Member 3 About Section](path/to/member3-about.png)
-*About me section*
+**Team Portfolio Contribution:**
+- **Footer:** Designed and developed the footer section with social media links and copyright
 
-![Team Portfolio Footer](path/to/team-footer.png)
-*Footer with contact and social links (Member 3's work)*
+***Screenshots:***
+![Team Profiles Section](./assets/screenshots/footer-Benoit.png)
+*Team member profiles section (Benoit's work in team portifolio)*
 
 ---
 
